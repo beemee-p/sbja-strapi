@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portolios",
+  "info": {
+    "singularName": "portolio",
+    "pluralName": "portolios",
+    "displayName": "Portolio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "pid": {
+      "type": "string"
+    },
+    "thumbnail": {
+      "type": "string"
+    },
+    "portfolio_skills": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::portfolio-skill.portfolio-skill"
+    },
+    "portfolio_videos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::portfolio-video.portfolio-video"
+    },
+    "portfolio_images": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::portfolio-image.portfolio-image"
+    }
+  }
+}

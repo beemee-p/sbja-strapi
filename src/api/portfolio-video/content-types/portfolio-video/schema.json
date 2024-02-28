@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolio_videos",
+  "info": {
+    "singularName": "portfolio-video",
+    "pluralName": "portfolio-videos",
+    "displayName": "PortfolioVideo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
